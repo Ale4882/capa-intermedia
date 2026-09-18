@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Usuarios | NUMERA</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+<a href="admin.html" class="sidebar-logo">
+√ <span>NUMERA</span>
+</a>
+
+<nav class="sidebar-nav">
+
+<a href="admin.html" class="sidebar-link">
+<span class="sidebar-icon">⌂</span>
+Inicio
+</a>
+
+<a href="usuarios-admin.html" class="sidebar-link active">
+<span class="sidebar-icon">👥</span>
+Usuarios
+</a>
+
+<a href="cursos-admin.html" class="sidebar-link">
+<span class="sidebar-icon">▣</span>
+Cursos
+</a>
+
+<a href="categorias-admin.html" class="sidebar-link">
+<span class="sidebar-icon">🏷</span>
+Categorías
+</a>
+
+<a href="reportes-admin.html" class="sidebar-link">
+<span class="sidebar-icon">▥</span>
+Reportes
+</a>
+
+<a href="mensajes-admin.html" class="sidebar-link">
+<span class="sidebar-icon">✉</span>
+Soporte / Mensajes
+</a>
+
+</nav>
+
+<div class="sidebar-bottom">
+
+<a href="configuracion-admin.html" class="sidebar-link">
+<span class="sidebar-icon">⚙</span>
+Configuración
+</a>
+
+<a href="index.html" class="sidebar-link logout-link">
+<span class="sidebar-icon">↪</span>
+Cerrar sesión
+</a>
+
+</div>
+
+</aside>
+
+
+<main class="dashboard">
+
+<header class="dashboard-header">
+
+<div>
+<p class="dashboard-welcome">Administración</p>
+<h1>Usuarios</h1>
+</div>
+
+<div class="dashboard-actions">
+
+<button class="theme-button" id="themeButton">☾</button>
+
+<div class="user-mini">
+<div class="user-avatar">A</div>
+
+<div>
+<strong>Administrador</strong>
+<small>Administrador</small>
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<div class="page-title">
+
+<h1>Gestionar usuarios</h1>
+
+<p>Consulta y administra las cuentas registradas.</p>
+
+</div>
+
+
+<div class="filter-bar">
+
+<input type="text" placeholder="Buscar usuario...">
+
+<select>
+<option>Todos los roles</option>
+<option>Estudiante</option>
+<option>Instructor</option>
+</select>
+
+<select>
+<option>Todos los estados</option>
+<option>Activo</option>
+<option>Bloqueado</option>
+</select>
+
+<button>Buscar</button>
+
+</div>
+
+
+<div class="admin-list">
+
+<div class="admin-list-item">
+
+<div class="user-avatar">M</div>
+
+<div>
+
+<strong>María López</strong>
+<small>Estudiante · maria@correo.com · Activo</small>
+
+</div>
+
+<div class="admin-list-actions">
+<button>Ver</button>
+<button>Bloquear</button>
+</div>
+
+</div>
+
+
+<div class="admin-list-item">
+
+<div class="user-avatar">J</div>
+
+<div>
+
+<strong>Juan Pérez</strong>
+<small>Instructor · juan@correo.com · Activo</small>
+
+</div>
+
+<div class="admin-list-actions">
+<button>Ver</button>
+<button>Bloquear</button>
+</div>
+
+</div>
+
+
+<div class="admin-list-item">
+
+<div class="user-avatar">L</div>
+
+<div>
+
+<strong>Luis García</strong>
+<small>Estudiante · luis@correo.com · Bloqueado</small>
+
+</div>
+
+<div class="admin-list-actions">
+<button>Ver</button>
+<button>Desbloquear</button>
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

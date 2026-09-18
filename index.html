@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NUMERA | Aprende Matemáticas</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =========================
+         ENCABEZADO
+    ========================== -->
+
+    <header class="header">
+
+        <div class="logo">
+            <span class="logo-symbol">√</span>
+            <span>NUMERA</span>
+        </div>
+
+        <div class="header-actions">
+
+            <button class="theme-button" id="themeButton" title="Cambiar tema">
+                ☾
+            </button>
+
+            <a href="login.html" class="login-button">
+                Iniciar sesión
+            </a>
+
+            <a href="registro.html" class="register-button">
+                Registrarse
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         CONTENIDO PRINCIPAL
+    ========================== -->
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-text">
+
+                <span class="small-label">APRENDE • RESUELVE • AVANZA</span>
+
+                <h1>
+                    Las matemáticas
+                    <span>tienen sentido.</span>
+                </h1>
+
+                <p>
+                    Explora cursos de matemáticas y ciencias,
+                    aprende a tu propio ritmo y lleva tu progreso
+                    contigo.
+                </p>
+
+                <div class="search-box">
+
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="text"
+                        placeholder="¿Qué quieres aprender?"
+                        id="searchInput"
+                    >
+
+                    <button id="searchButton">
+                        →
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ELEMENTO DECORATIVO -->
+
+            <div class="hero-decoration">
+
+                <div class="math-display">
+
+                    <div class="display-top">
+                        NUMERA
+                    </div>
+
+                    <div class="display-equation">
+                        x² + y² = r²
+                    </div>
+
+                    <div class="display-result">
+                        = 1
+                    </div>
+
+                </div>
+
+                <div class="math-symbol symbol-one">
+                    π
+                </div>
+
+                <div class="math-symbol symbol-two">
+                    ∫
+                </div>
+
+                <div class="math-symbol symbol-three">
+                    √
+                </div>
+
+                <div class="cat">
+                    /\_/\\
+                    <br>
+                    ( •ᴗ• )
+                    <br>
+                    / > 📐
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATEGORÍAS
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">EXPLORA</span>
+
+                    <h2>Categorías</h2>
+                </div>
+
+                <a href="login.html" class="see-all">
+                    Ver todas →
+                </a>
+
+            </div>
+
+
+            <div class="categories">
+
+                <a href="login.html" class="category-card category-blue">
+
+                    <div class="category-symbol">
+                        x²
+                    </div>
+
+                    <div>
+                        <h3>Álgebra</h3>
+                        <p>Ecuaciones y expresiones</p>
+                    </div>
+
+                </a>
+
+
+                <a href="login.html" class="category-card category-purple">
+
+                    <div class="category-symbol">
+                        ∫
+                    </div>
+
+                    <div>
+                        <h3>Cálculo</h3>
+                        <p>Límites y derivadas</p>
+                    </div>
+
+                </a>
+
+
+                <a href="login.html" class="category-card category-green">
+
+                    <div class="category-symbol">
+                        △
+                    </div>
+
+                    <div>
+                        <h3>Geometría</h3>
+                        <p>Figuras y dimensiones</p>
+                    </div>
+
+                </a>
+
+
+                <a href="login.html" class="category-card category-red">
+
+                    <div class="category-symbol">
+                        sin θ
+                    </div>
+
+                    <div>
+                        <h3>Trigonometría</h3>
+                        <p>Ángulos y funciones</p>
+                    </div>
+
+                </a>
+
+
+                <a href="login.html" class="category-card category-yellow">
+
+                    <div class="category-symbol">
+                        σ
+                    </div>
+
+                    <div>
+                        <h3>Estadística</h3>
+                        <p>Datos y probabilidades</p>
+                    </div>
+
+                </a>
+
+
+                <a href="login.html" class="category-card category-orange">
+
+                    <div class="category-symbol">
+                        F=ma
+                    </div>
+
+                    <div>
+                        <h3>Física</h3>
+                        <p>Movimiento y energía</p>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CURSOS MEJOR CALIFICADOS
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">DESTACADOS</span>
+
+                    <h2>Mejor calificados</h2>
+                </div>
+
+                <a href="#" class="see-all">
+                    Ver todos →
+                </a>
+
+            </div>
+
+
+            <div class="courses-grid">
+
+                <article class="course-card">
+
+                    <div class="course-image course-image-blue">
+                        ∫
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            CÁLCULO
+                        </span>
+
+                        <h3>
+                            Cálculo diferencial desde cero
+                        </h3>
+
+                        <p class="instructor">
+                            Por Alejandro Torres
+                        </p>
+
+                        <div class="course-info">
+
+                            <span class="rating">
+                                ★ 4.9
+                            </span>
+
+                            <span class="levels">
+                                5 niveles
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <strong>
+                                $299.00
+                            </strong>
+
+                            <button class="course-button">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-image course-image-purple">
+                        x²
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            ÁLGEBRA
+                        </span>
+
+                        <h3>
+                            Álgebra fundamental
+                        </h3>
+
+                        <p class="instructor">
+                            Por María González
+                        </p>
+
+                        <div class="course-info">
+
+                            <span class="rating">
+                                ★ 4.8
+                            </span>
+
+                            <span class="levels">
+                                4 niveles
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <strong>
+                                $249.00
+                            </strong>
+
+                            <button class="course-button">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-image course-image-green">
+                        △
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            GEOMETRÍA
+                        </span>
+
+                        <h3>
+                            Geometría para principiantes
+                        </h3>
+
+                        <p class="instructor">
+                            Por Carlos Ramírez
+                        </p>
+
+                        <div class="course-info">
+
+                            <span class="rating">
+                                ★ 4.8
+                            </span>
+
+                            <span class="levels">
+                                6 niveles
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <strong>
+                                $199.00
+                            </strong>
+
+                            <button class="course-button">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MÁS VENDIDOS
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">POPULARES</span>
+
+                    <h2>Más vendidos</h2>
+                </div>
+
+                <a href="#" class="see-all">
+                    Ver todos →
+                </a>
+
+            </div>
+
+
+            <div class="courses-grid">
+
+                <article class="course-card">
+
+                    <div class="course-image course-image-red">
+                        sin θ
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            TRIGONOMETRÍA
+                        </span>
+
+                        <h3>
+                            Trigonometría esencial
+                        </h3>
+
+                        <p class="instructor">
+                            Por Laura Martínez
+                        </p>
+
+                        <div class="course-info">
+
+                            <span class="rating">
+                                ★ 4.7
+                            </span>
+
+                            <span class="levels">
+                                5 niveles
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <strong>
+                                $279.00
+                            </strong>
+
+                            <button class="course-button">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-image course-image-yellow">
+                        σ
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            ESTADÍSTICA
+                        </span>
+
+                        <h3>
+                            Estadística básica
+                        </h3>
+
+                        <p class="instructor">
+                            Por Daniel López
+                        </p>
+
+                        <div class="course-info">
+
+                            <span class="rating">
+                                ★ 4.6
+                            </span>
+
+                            <span class="levels">
+                                4 niveles
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <strong>
+                                $229.00
+                            </strong>
+
+                            <button class="course-button">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-image course-image-orange">
+                        F=ma
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            FÍSICA
+                        </span>
+
+                        <h3>
+                            Física básica
+                        </h3>
+
+                        <p class="instructor">
+                            Por Ana Pérez
+                        </p>
+
+                        <div class="course-info">
+
+                            <span class="rating">
+                                ★ 4.7
+                            </span>
+
+                            <span class="levels">
+                                7 niveles
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <strong>
+                                $329.00
+                            </strong>
+
+                            <button class="course-button">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CURSOS RECIENTES
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">NUEVOS</span>
+
+                    <h2>Recién publicados</h2>
+                </div>
+
+                <a href="#" class="see-all">
+                    Ver todos →
+                </a>
+
+            </div>
+
+
+            <div class="courses-grid">
+
+                <article class="course-card">
+
+                    <div class="course-image course-image-blue">
+                        π
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            MATEMÁTICAS
+                        </span>
+
+                        <h3>
+                            Matemáticas desde cero
+                        </h3>
+
+                        <p class="instructor">
+                            Por Sofía Hernández
+                        </p>
+
+                        <div class="course-info">
+
+                            <span class="rating">
+                                ★ Nuevo
+                            </span>
+
+                            <span class="levels">
+                                8 niveles
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <strong>
+                                $259.00
+                            </strong>
+
+                            <button class="course-button">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-image course-image-purple">
+                        √
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            MATEMÁTICAS
+                        </span>
+
+                        <h3>
+                            Problemas matemáticos
+                        </h3>
+
+                        <p class="instructor">
+                            Por Luis Castillo
+                        </p>
+
+                        <div class="course-info">
+
+                            <span class="rating">
+                                ★ Nuevo
+                            </span>
+
+                            <span class="levels">
+                                3 niveles
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <strong>
+                                GRATIS
+                            </strong>
+
+                            <button class="course-button">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-image course-image-green">
+                        ∑
+                    </div>
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            ESTADÍSTICA
+                        </span>
+
+                        <h3>
+                            Introducción a la probabilidad
+                        </h3>
+
+                        <p class="instructor">
+                            Por Andrea Ruiz
+                        </p>
+
+                        <div class="course-info">
+
+                            <span class="rating">
+                                ★ Nuevo
+                            </span>
+
+                            <span class="levels">
+                                4 niveles
+                            </span>
+
+                        </div>
+
+                        <div class="course-footer">
+
+                            <strong>
+                                $189.00
+                            </strong>
+
+                            <button class="course-button">
+                                →
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            √ NUMERA
+        </div>
+
+        <p>
+            Aprende. Resuelve. Avanza.
+        </p>
+
+        <span>
+            © 2026 NUMERA
+        </span>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

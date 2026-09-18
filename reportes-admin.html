@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reportes | NUMERA</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+<a href="admin.html" class="sidebar-logo">
+√ <span>NUMERA</span>
+</a>
+
+<nav class="sidebar-nav">
+
+<a href="admin.html" class="sidebar-link">
+<span class="sidebar-icon">⌂</span>
+Inicio
+</a>
+
+<a href="usuarios-admin.html" class="sidebar-link">
+<span class="sidebar-icon">👥</span>
+Usuarios
+</a>
+
+<a href="cursos-admin.html" class="sidebar-link">
+<span class="sidebar-icon">▣</span>
+Cursos
+</a>
+
+<a href="categorias-admin.html" class="sidebar-link">
+<span class="sidebar-icon">🏷</span>
+Categorías
+</a>
+
+<a href="reportes-admin.html" class="sidebar-link active">
+<span class="sidebar-icon">▥</span>
+Reportes
+</a>
+
+<a href="mensajes-admin.html" class="sidebar-link">
+<span class="sidebar-icon">✉</span>
+Soporte / Mensajes
+</a>
+
+</nav>
+
+
+<div class="sidebar-bottom">
+
+<a href="admin-configuracion.html" class="sidebar-link">
+<span class="sidebar-icon">⚙</span>
+Configuración
+</a>
+
+<a href="index.html" class="sidebar-link logout-link">
+<span class="sidebar-icon">↪</span>
+Cerrar sesión
+</a>
+
+</div>
+
+</aside>
+
+
+<main class="dashboard">
+
+<header class="dashboard-header">
+
+<div>
+
+<p class="dashboard-welcome">
+Administración
+</p>
+
+<h1>Reportes de usuarios</h1>
+
+</div>
+
+
+<div class="dashboard-actions">
+
+<button class="theme-button" id="themeButton">
+☾
+</button>
+
+
+<div class="user-mini">
+
+<div class="user-avatar">
+A
+</div>
+
+<div>
+
+<strong>
+Administrador
+</strong>
+
+<small>
+Administrador
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<div class="page-title">
+
+<h1>Reporte de usuarios</h1>
+
+<p>
+Consulta información de los usuarios activos del portal.
+</p>
+
+</div>
+
+
+<!-- =========================
+     FILTRO
+========================= -->
+
+<div class="content-card">
+
+<h2>Generar reporte</h2>
+
+<p>
+Selecciona el tipo de usuario que deseas consultar.
+</p>
+
+
+<div class="form-group">
+
+<label>
+Tipo de usuario
+</label>
+
+<select>
+
+<option>
+Instructor
+</option>
+
+<option>
+Estudiante
+</option>
+
+</select>
+
+</div>
+
+
+<p class="filter-note">
+
+Solo se muestran usuarios activos.
+
+</p>
+
+
+<button class="primary-btn">
+Generar reporte
+</button>
+
+</div>
+
+
+<!-- =========================
+     INSTRUCTORES
+========================= -->
+
+<div class="content-card">
+
+<div class="section-head">
+
+<div>
+
+<h2>Usuarios tipo instructor</h2>
+
+<p>
+Información de instructores activos.
+</p>
+
+</div>
+
+<span class="badge">
+Activos
+</span>
+
+</div>
+
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>Usuario</th>
+
+<th>Nombre</th>
+
+<th>Fecha de ingreso</th>
+
+<th>Cursos ofrecidos</th>
+
+<th>Total de ganancias</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+mlopez
+</td>
+
+<td>
+María López
+</td>
+
+<td>
+04 Jul 2026
+</td>
+
+<td>
+6
+</td>
+
+<td>
+$110,922.00
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+jmartinez
+</td>
+
+<td>
+Jorge Martínez
+</td>
+
+<td>
+18 Jun 2026
+</td>
+
+<td>
+4
+</td>
+
+<td>
+$74,350.00
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+aramos
+</td>
+
+<td>
+Ana Ramos
+</td>
+
+<td>
+02 Ago 2026
+</td>
+
+<td>
+3
+</td>
+
+<td>
+$52,890.00
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<!-- =========================
+     ESTUDIANTES
+========================= -->
+
+<div class="content-card">
+
+<div class="section-head">
+
+<div>
+
+<h2>Usuarios tipo estudiante</h2>
+
+<p>
+Información de estudiantes activos.
+</p>
+
+</div>
+
+<span class="badge">
+Activos
+</span>
+
+</div>
+
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>Usuario</th>
+
+<th>Nombre</th>
+
+<th>Fecha de ingreso</th>
+
+<th>Cursos inscritos</th>
+
+<th>% cursos terminados</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+alex01
+</td>
+
+<td>
+Alex García
+</td>
+
+<td>
+12 Sep 2026
+</td>
+
+<td>
+8
+</td>
+
+<td>
+37.50%
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+druiz
+</td>
+
+<td>
+Daniela Ruiz
+</td>
+
+<td>
+02 Ago 2026
+</td>
+
+<td>
+5
+</td>
+
+<td>
+60.00%
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+mperez
+</td>
+
+<td>
+Marco Pérez
+</td>
+
+<td>
+15 Jul 2026
+</td>
+
+<td>
+7
+</td>
+
+<td>
+42.86%
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

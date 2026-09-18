@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cursos | NUMERA</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+<a href="admin.html" class="sidebar-logo">
+√ <span>NUMERA</span>
+</a>
+
+<nav class="sidebar-nav">
+
+<a href="admin.html" class="sidebar-link">
+<span class="sidebar-icon">⌂</span>
+Inicio
+</a>
+
+<a href="usuarios-admin.html" class="sidebar-link">
+<span class="sidebar-icon">👥</span>
+Usuarios
+</a>
+
+<a href="cursos-admin.html" class="sidebar-link active">
+<span class="sidebar-icon">▣</span>
+Cursos
+</a>
+
+<a href="categorias-admin.html" class="sidebar-link">
+<span class="sidebar-icon">🏷</span>
+Categorías
+</a>
+
+<a href="reportes-admin.html" class="sidebar-link">
+<span class="sidebar-icon">▥</span>
+Reportes
+</a>
+
+<a href="mensajes-admin.html" class="sidebar-link">
+<span class="sidebar-icon">✉</span>
+Soporte / Mensajes
+</a>
+
+</nav>
+
+<div class="sidebar-bottom">
+
+<a href="configuracion-admin.html" class="sidebar-link">
+<span class="sidebar-icon">⚙</span>
+Configuración
+</a>
+
+<a href="index.html" class="sidebar-link logout-link">
+<span class="sidebar-icon">↪</span>
+Cerrar sesión
+</a>
+
+</div>
+
+</aside>
+
+
+<main class="dashboard">
+
+<header class="dashboard-header">
+
+<div>
+<p class="dashboard-welcome">Administración</p>
+<h1>Cursos</h1>
+</div>
+
+<div class="dashboard-actions">
+
+<button class="theme-button" id="themeButton">☾</button>
+
+<div class="user-mini">
+<div class="user-avatar">A</div>
+
+<div>
+<strong>Administrador</strong>
+<small>Administrador</small>
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<div class="page-title">
+
+<h1>Gestionar cursos</h1>
+
+<p>Revisa los cursos publicados en NUMERA.</p>
+
+</div>
+
+
+<div class="filter-bar">
+
+<input type="text" placeholder="Buscar curso...">
+
+<select>
+<option>Todas las categorías</option>
+<option>Álgebra</option>
+<option>Cálculo</option>
+<option>Geometría</option>
+</select>
+
+<button>Buscar</button>
+
+</div>
+
+
+<div class="course-grid">
+
+<article class="course-card">
+
+<div class="course-cover algebra-cover">∑</div>
+
+<div class="course-info">
+
+<span class="course-category">Álgebra</span>
+
+<h3>Álgebra desde cero</h3>
+
+<p>Publicado por Profesor.</p>
+
+<div class="course-rating">★ 4.9</div>
+
+<button class="course-button">Revisar curso</button>
+
+</div>
+
+</article>
+
+
+<article class="course-card">
+
+<div class="course-cover calculus-cover">∫</div>
+
+<div class="course-info">
+
+<span class="course-category">Cálculo</span>
+
+<h3>Introducción al cálculo</h3>
+
+<p>Publicado por Mariana.</p>
+
+<div class="course-rating">★ 4.8</div>
+
+<button class="course-button">Revisar curso</button>
+
+</div>
+
+</article>
+
+
+<article class="course-card">
+
+<div class="course-cover geometry-cover">△</div>
+
+<div class="course-info">
+
+<span class="course-category">Geometría</span>
+
+<h3>Geometría básica</h3>
+
+<p>Publicado por Carlos.</p>
+
+<div class="course-rating">★ 4.7</div>
+
+<button class="course-button">Revisar curso</button>
+
+</div>
+
+</article>
+
+</div>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

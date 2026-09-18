@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administrador | NUMERA</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- =====================================
+         SIDEBAR ADMIN
+    ====================================== -->
+
+    <aside class="sidebar">
+
+        <a href="admin.html" class="sidebar-logo">
+            √ <span>NUMERA</span>
+        </a>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="admin.html" class="sidebar-link active">
+                <span class="sidebar-icon">⌂</span>
+                Inicio
+            </a>
+
+            <a href="usuarios-admin.html" class="sidebar-link">
+                <span class="sidebar-icon">👥</span>
+                Usuarios
+            </a>
+
+            <a href="cursos-admin.html" class="sidebar-link">
+                <span class="sidebar-icon">▣</span>
+                Cursos
+            </a>
+
+            <a href="categorias-admin.html" class="sidebar-link">
+                <span class="sidebar-icon">🏷</span>
+                Categorías
+            </a>
+
+            <a href="reportes-admin.html" class="sidebar-link">
+                <span class="sidebar-icon">▥</span>
+                Reportes
+            </a>
+
+            <a href="mensajes-admin.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                Soporte / Mensajes
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="configuracion-admin.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                Configuración
+            </a>
+
+            <a href="index.html" class="sidebar-link logout-link">
+                <span class="sidebar-icon">↪</span>
+                Cerrar sesión
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================
+         CONTENIDO
+    ====================================== -->
+
+    <main class="dashboard">
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <p class="dashboard-welcome">
+                    Panel administrativo
+                </p>
+
+                <h1>Hola, Administrador 👋</h1>
+
+            </div>
+
+
+            <div class="dashboard-actions">
+
+                <button class="theme-button" id="themeButton">
+                    ☾
+                </button>
+
+
+                <div class="user-mini">
+
+                    <div class="user-avatar">
+                        A
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Administrador
+                        </strong>
+
+                        <small>
+                            Administrador
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================
+             ESTADÍSTICAS
+        ====================================== -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    👥
+                </span>
+
+                <div>
+
+                    <small>
+                        Usuarios registrados
+                    </small>
+
+                    <strong>
+                        1,284
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    ▣
+                </span>
+
+                <div>
+
+                    <small>
+                        Cursos activos
+                    </small>
+
+                    <strong>
+                        76
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    🏷
+                </span>
+
+                <div>
+
+                    <small>
+                        Categorías
+                    </small>
+
+                    <strong>
+                        12
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    ⚠
+                </span>
+
+                <div>
+
+                    <small>
+                        Reportes pendientes
+                    </small>
+
+                    <strong>
+                        7
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             ADMINISTRACIÓN
+        ====================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>Administración</h2>
+
+                    <p>
+                        Accesos rápidos a las funciones principales.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="admin-action-grid">
+
+                <a href="#" class="admin-action-card">
+
+                    <span class="admin-action-icon">
+                        👥
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Gestionar usuarios
+                        </h3>
+
+                        <p>
+                            Bloquear, desbloquear y administrar cuentas.
+                        </p>
+
+                    </div>
+
+                    <span class="action-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="admin-action-card">
+
+                    <span class="admin-action-icon">
+                        ▣
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Gestionar cursos
+                        </h3>
+
+                        <p>
+                            Revisar y administrar los cursos publicados.
+                        </p>
+
+                    </div>
+
+                    <span class="action-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="admin-action-card">
+
+                    <span class="admin-action-icon">
+                        🏷
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Categorías
+                        </h3>
+
+                        <p>
+                            Crear, modificar o desactivar categorías.
+                        </p>
+
+                    </div>
+
+                    <span class="action-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <a href="#" class="admin-action-card">
+
+                    <span class="admin-action-icon">
+                        ⚠
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Reportes
+                        </h3>
+
+                        <p>
+                            Revisar reportes y comentarios denunciados.
+                        </p>
+
+                    </div>
+
+                    <span class="action-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             USUARIOS RECIENTES
+        ====================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>Usuarios recientes</h2>
+
+                    <p>
+                        Últimos usuarios registrados en NUMERA.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    Ver todos
+                </a>
+
+            </div>
+
+
+            <div class="user-table">
+
+                <div class="user-table-header">
+
+                    <span>
+                        Usuario
+                    </span>
+
+                    <span>
+                        Tipo
+                    </span>
+
+                    <span>
+                        Estado
+                    </span>
+
+                    <span>
+                        Registro
+                    </span>
+
+                </div>
+
+
+                <div class="user-table-row">
+
+                    <div class="table-user">
+
+                        <div class="user-avatar">
+                            M
+                        </div>
+
+                        <strong>
+                            María López
+                        </strong>
+
+                    </div>
+
+                    <span>
+                        Estudiante
+                    </span>
+
+                    <span class="status active-status">
+                        Activo
+                    </span>
+
+                    <span>
+                        17/09/2026
+                    </span>
+
+                </div>
+
+
+                <div class="user-table-row">
+
+                    <div class="table-user">
+
+                        <div class="user-avatar">
+                            J
+                        </div>
+
+                        <strong>
+                            Juan Pérez
+                        </strong>
+
+                    </div>
+
+                    <span>
+                        Instructor
+                    </span>
+
+                    <span class="status active-status">
+                        Activo
+                    </span>
+
+                    <span>
+                        16/09/2026
+                    </span>
+
+                </div>
+
+
+                <div class="user-table-row">
+
+                    <div class="table-user">
+
+                        <div class="user-avatar">
+                            L
+                        </div>
+
+                        <strong>
+                            Luis García
+                        </strong>
+
+                    </div>
+
+                    <span>
+                        Estudiante
+                    </span>
+
+                    <span class="status blocked-status">
+                        Bloqueado
+                    </span>
+
+                    <span>
+                        15/09/2026
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             REPORTES
+        ====================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>Reportes pendientes</h2>
+
+                    <p>
+                        Requieren revisión administrativa.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    Ver reportes
+                </a>
+
+            </div>
+
+
+            <div class="report-list">
+
+                <div class="report-item">
+
+                    <span class="report-icon">
+                        ⚠
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Comentario reportado
+                        </strong>
+
+                        <p>
+                            Curso: Álgebra desde cero
+                        </p>
+
+                    </div>
+
+                    <button>
+                        Revisar
+                    </button>
+
+                </div>
+
+
+                <div class="report-item">
+
+                    <span class="report-icon">
+                        ⚠
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Curso reportado
+                        </strong>
+
+                        <p>
+                            Curso: Matemáticas avanzadas
+                        </p>
+
+                    </div>
+
+                    <button>
+                        Revisar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

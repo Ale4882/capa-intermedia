@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi progreso | NUMERA</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+    <a href="estudiante.html" class="sidebar-logo">
+        √ <span>NUMERA</span>
+    </a>
+
+    <nav class="sidebar-nav">
+
+        <a href="estudiante.html" class="sidebar-link">
+            <span class="sidebar-icon">⌂</span>
+            Inicio
+        </a>
+
+        <a href="cursos-estudiante.html" class="sidebar-link">
+            <span class="sidebar-icon">▣</span>
+            Cursos
+        </a>
+
+        <a href="progreso-estudiante.html" class="sidebar-link active">
+            <span class="sidebar-icon">◒</span>
+            Mi progreso
+        </a>
+
+        <a href="mis-cursos-estudiante.html" class="sidebar-link">
+            <span class="sidebar-icon">🎓</span>
+            Mis cursos
+        </a>
+
+        <a href="mensajes-estudiante.html" class="sidebar-link">
+            <span class="sidebar-icon">✉</span>
+            Mensajes
+        </a>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <a href="configuracion-estudiante.html" class="sidebar-link">
+            <span class="sidebar-icon">⚙</span>
+            Configuración
+        </a>
+
+        <a href="index.html" class="sidebar-link logout-link">
+            <span class="sidebar-icon">↪</span>
+            Cerrar sesión
+        </a>
+
+    </div>
+
+</aside>
+
+
+<main class="dashboard">
+
+<header class="dashboard-header">
+
+    <div>
+        <p class="dashboard-welcome">Estudiante</p>
+        <h1>Mi progreso</h1>
+    </div>
+
+    <div class="dashboard-actions">
+
+        <button class="theme-button" id="themeButton">☾</button>
+
+        <div class="user-mini">
+            <div class="user-avatar">A</div>
+
+            <div>
+                <strong>Alex</strong>
+                <small>Estudiante</small>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+
+<div class="page-title">
+
+    <h1>Kardex de cursos</h1>
+
+    <p>
+        Consulta tu progreso y estado en los cursos inscritos.
+    </p>
+
+</div>
+
+
+<div class="filter-bar">
+
+    <select>
+        <option>Todos los cursos</option>
+        <option>Álgebra</option>
+        <option>Cálculo</option>
+    </select>
+
+    <select>
+        <option>Todos los estados</option>
+        <option>Completado</option>
+        <option>Incompleto</option>
+    </select>
+
+    <button>Filtrar</button>
+
+</div>
+
+
+<table class="kardex-table">
+
+    <thead>
+
+        <tr>
+            <th>Curso</th>
+            <th>Progreso</th>
+            <th>Fecha de inscripción</th>
+            <th>Último nivel</th>
+            <th>Fecha de finalización</th>
+            <th>Estado</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr>
+
+            <td>Álgebra desde cero</td>
+
+            <td>
+                <div class="progress-small">
+                    <div style="width:65%;"></div>
+                </div>
+                65%
+            </td>
+
+            <td>05/09/2026</td>
+
+            <td>Nivel 4</td>
+
+            <td>—</td>
+
+            <td>Incompleto</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>Geometría básica</td>
+
+            <td>
+                <div class="progress-small">
+                    <div style="width:100%;"></div>
+                </div>
+                100%
+            </td>
+
+            <td>20/08/2026</td>
+
+            <td>Nivel 6</td>
+
+            <td>10/09/2026</td>
+
+            <td>Completado</td>
+
+        </tr>
+
+
+        <tr>
+
+            <td>Introducción al cálculo</td>
+
+            <td>
+                <div class="progress-small">
+                    <div style="width:32%;"></div>
+                </div>
+                32%
+            </td>
+
+            <td>12/09/2026</td>
+
+            <td>Nivel 2</td>
+
+            <td>—</td>
+
+            <td>Incompleto</td>
+
+        </tr>
+
+    </tbody>
+
+</table>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

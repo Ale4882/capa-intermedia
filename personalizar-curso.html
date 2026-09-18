@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Personalizar curso | NUMERA</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+<a href="profesor.html" class="sidebar-logo">
+√ <span>NUMERA</span>
+</a>
+
+<nav class="sidebar-nav">
+
+<a href="profesor.html" class="sidebar-link">
+<span class="sidebar-icon">⌂</span>
+Inicio
+</a>
+
+<a href="mis-cursos-profesor.html" class="sidebar-link active">
+<span class="sidebar-icon">▣</span>
+Mis cursos
+</a>
+
+<a href="crear-curso.html" class="sidebar-link active">
+<span class="sidebar-icon">+</span>
+Crear curso
+</a>
+
+<a href="reportes-profesor.html" class="sidebar-link">
+<span class="sidebar-icon">▥</span>
+Reportes / Ventas
+</a>
+
+<a href="mensajes-profesor.html" class="sidebar-link">
+<span class="sidebar-icon">✉</span>
+Mensajes
+</a>
+
+</nav>
+
+<div class="sidebar-bottom">
+
+<a href="profesor-configuracion.html" class="sidebar-link">
+<span class="sidebar-icon">⚙</span>
+Configuración
+</a>
+
+<a href="index.html" class="sidebar-link logout-link">
+<span class="sidebar-icon">↪</span>
+Cerrar sesión
+</a>
+
+</div>
+
+</aside>
+
+
+<main class="dashboard">
+
+<header class="dashboard-header">
+
+<div>
+
+<p class="dashboard-welcome">Crear curso</p>
+
+<h1>Personalización del curso</h1>
+
+</div>
+
+<div class="dashboard-actions">
+
+<button class="theme-button" id="themeButton">☾</button>
+
+<div class="user-mini">
+
+<div class="user-avatar">M</div>
+
+<div>
+<strong>María</strong>
+<small>Instructor</small>
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<div class="page-title">
+
+<h1>Álgebra desde cero</h1>
+
+<p>
+Organiza el contenido por niveles y lecciones.
+</p>
+
+</div>
+
+
+<div class="content-card">
+
+<div class="section-head">
+
+<div>
+
+<h2>Nivel 1 · Fundamentos</h2>
+
+<p>
+Contenido introductorio del curso.
+</p>
+
+</div>
+
+<button class="primary-btn">
++ Agregar lección
+</button>
+
+</div>
+
+
+<div class="lesson-editor">
+
+<div>
+
+<span class="badge">
+Lección 1
+</span>
+
+<h3>Introducción al álgebra</h3>
+
+<p>
+Video · PDF · Texto
+</p>
+
+</div>
+
+<button class="secondary-btn">
+Editar
+</button>
+
+</div>
+
+
+<div class="lesson-editor">
+
+<div>
+
+<span class="badge">
+Lección 2
+</span>
+
+<h3>Variables y expresiones</h3>
+
+<p>
+Video · Imagen · URL
+</p>
+
+</div>
+
+<button class="secondary-btn">
+Editar
+</button>
+
+</div>
+
+
+<div class="lesson-editor">
+
+<div>
+
+<span class="badge">
+Lección 3
+</span>
+
+<h3>Operaciones algebraicas</h3>
+
+<p>
+Video · PDF · Ejercicios
+</p>
+
+</div>
+
+<button class="secondary-btn">
+Editar
+</button>
+
+</div>
+
+</div>
+
+
+<div class="content-card">
+
+<h2>Agregar contenido a la lección</h2>
+
+<p>
+Selecciona el tipo de material que deseas agregar.
+</p>
+
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label>Tipo de contenido</label>
+
+<select>
+
+<option>Video</option>
+
+<option>Texto</option>
+
+<option>PDF</option>
+
+<option>Imagen</option>
+
+<option>URL externa</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Título del recurso</label>
+
+<input
+type="text"
+placeholder="Ej. Video explicativo"
+/>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>URL del recurso</label>
+
+<input
+type="url"
+placeholder="https://ejemplo.com"
+/>
+
+</div>
+
+
+<div class="form-group full">
+
+<label>Descripción</label>
+
+<textarea
+placeholder="Describe el material de esta lección..."
+></textarea>
+
+</div>
+
+</div>
+
+
+<button class="primary-btn">
++ Agregar recurso
+</button>
+
+</div>
+
+
+<div class="content-card">
+
+<div class="section-head">
+
+<div>
+
+<h2>Nivel 2 · Expresiones algebraicas</h2>
+
+<p>
+Agrega las siguientes lecciones.
+</p>
+
+</div>
+
+<button class="secondary-btn">
++ Agregar lección
+</button>
+
+</div>
+
+<div class="empty-state">
+
+<span>∑</span>
+
+<p>
+Todavía no hay lecciones en este nivel.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="page-actions">
+
+<a href="crear-curso.html" class="secondary-btn">
+← Información básica
+</a>
+
+<a href="mis-cursos-profesor.html" class="primary-btn">
+Guardar curso
+</a>
+
+</div>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

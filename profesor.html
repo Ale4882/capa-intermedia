@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profesor | NUMERA</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- =====================================
+         SIDEBAR PROFESOR
+    ====================================== -->
+
+    <aside class="sidebar">
+
+        <a href="profesor.html" class="sidebar-logo">
+            √ <span>NUMERA</span>
+        </a>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="profesor.html" class="sidebar-link active">
+                <span class="sidebar-icon">⌂</span>
+                Inicio
+            </a>
+
+            <a href="cursos-profesor.html" class="sidebar-link">
+                <span class="sidebar-icon">▣</span>
+                Mis cursos
+            </a>
+
+            <a href="crear-curso.html" class="sidebar-link">
+                <span class="sidebar-icon">＋</span>
+                Crear curso
+            </a>
+
+            <a href="reportes-profesor.html" class="sidebar-link">
+                <span class="sidebar-icon">▥</span>
+                Reportes
+            </a>
+
+            <a href="mensajes-profesor.html" class="sidebar-link">
+                <span class="sidebar-icon">✉</span>
+                Mensajes
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="configuracion-profesor.html" class="sidebar-link">
+                <span class="sidebar-icon">⚙</span>
+                Configuración
+            </a>
+
+            <a href="index.html" class="sidebar-link logout-link">
+                <span class="sidebar-icon">↪</span>
+                Cerrar sesión
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================
+         DASHBOARD
+    ====================================== -->
+
+    <main class="dashboard">
+
+        <header class="dashboard-header">
+
+            <div>
+
+                <p class="dashboard-welcome">
+                    Panel de profesor
+                </p>
+
+                <h1>Hola, Profesor 👋</h1>
+
+            </div>
+
+
+            <div class="dashboard-actions">
+
+                <button class="theme-button" id="themeButton">
+                    ☾
+                </button>
+
+
+                <div class="user-mini">
+
+                    <div class="user-avatar">
+                        P
+                    </div>
+
+                    <div>
+
+                        <strong>Profesor</strong>
+
+                        <small>
+                            Instructor
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- =====================================
+             ESTADÍSTICAS
+        ====================================== -->
+
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    ▣
+                </span>
+
+                <div>
+
+                    <small>
+                        Mis cursos
+                    </small>
+
+                    <strong>
+                        8
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    👥
+                </span>
+
+                <div>
+
+                    <small>
+                        Estudiantes
+                    </small>
+
+                    <strong>
+                        247
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    ★
+                </span>
+
+                <div>
+
+                    <small>
+                        Calificación promedio
+                    </small>
+
+                    <strong>
+                        4.8
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <span class="stat-icon">
+                    $
+                </span>
+
+                <div>
+
+                    <small>
+                        Ingresos
+                    </small>
+
+                    <strong>
+                        $8,420
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             MIS CURSOS
+        ====================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>Mis cursos</h2>
+
+                    <p>
+                        Administra tus cursos publicados.
+                    </p>
+
+                </div>
+
+                <a href="#">
+                    Ver todos
+                </a>
+
+            </div>
+
+
+            <div class="course-grid">
+
+                <article class="course-card">
+
+                    <div class="course-cover algebra-cover">
+                        ∑
+                    </div>
+
+                    <div class="course-info">
+
+                        <span class="course-category">
+                            Álgebra
+                        </span>
+
+                        <h3>
+                            Álgebra desde cero
+                        </h3>
+
+                        <p>
+                            Curso introductorio de álgebra.
+                        </p>
+
+                        <div class="teacher-course-data">
+
+                            <span>
+                                👥 86 estudiantes
+                            </span>
+
+                            <span>
+                                ★ 4.9
+                            </span>
+
+                        </div>
+
+                        <button class="course-button">
+                            Administrar curso
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-cover calculus-cover">
+                        ∫
+                    </div>
+
+                    <div class="course-info">
+
+                        <span class="course-category">
+                            Cálculo
+                        </span>
+
+                        <h3>
+                            Cálculo diferencial
+                        </h3>
+
+                        <p>
+                            Conceptos fundamentales de derivadas.
+                        </p>
+
+                        <div class="teacher-course-data">
+
+                            <span>
+                                👥 54 estudiantes
+                            </span>
+
+                            <span>
+                                ★ 4.7
+                            </span>
+
+                        </div>
+
+                        <button class="course-button">
+                            Administrar curso
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-cover geometry-cover">
+                        △
+                    </div>
+
+                    <div class="course-info">
+
+                        <span class="course-category">
+                            Geometría
+                        </span>
+
+                        <h3>
+                            Geometría analítica
+                        </h3>
+
+                        <p>
+                            Coordenadas, rectas y circunferencias.
+                        </p>
+
+                        <div class="teacher-course-data">
+
+                            <span>
+                                👥 107 estudiantes
+                            </span>
+
+                            <span>
+                                ★ 4.8
+                            </span>
+
+                        </div>
+
+                        <button class="course-button">
+                            Administrar curso
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             ACTIVIDAD
+        ====================================== -->
+
+        <section class="dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>Actividad reciente</h2>
+
+                    <p>
+                        Últimos movimientos de tus cursos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="activity-list">
+
+                <div class="activity-item">
+
+                    <span class="activity-icon">
+                        👤
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Nuevo estudiante inscrito
+                        </strong>
+
+                        <p>
+                            Un estudiante se inscribió en Álgebra desde cero.
+                        </p>
+
+                    </div>
+
+                    <small>
+                        Hace 10 min
+                    </small>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <span class="activity-icon">
+                        ★
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Nueva calificación
+                        </strong>
+
+                        <p>
+                            Tu curso recibió una calificación de 5 estrellas.
+                        </p>
+
+                    </div>
+
+                    <small>
+                        Hace 2 h
+                    </small>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <span class="activity-icon">
+                        💬
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Nuevo mensaje
+                        </strong>
+
+                        <p>
+                            Tienes un nuevo mensaje de un estudiante.
+                        </p>
+
+                    </div>
+
+                    <small>
+                        Ayer
+                    </small>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ventas y reportes | NUMERA</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+<a href="profesor.html" class="sidebar-logo">
+√ <span>NUMERA</span>
+</a>
+
+<nav class="sidebar-nav">
+
+<a href="profesor.html" class="sidebar-link">
+<span class="sidebar-icon">⌂</span>
+Inicio
+</a>
+
+<a href="mis-cursos-profesor.html" class="sidebar-link">
+<span class="sidebar-icon">▣</span>
+Mis cursos
+</a>
+
+<a href="crear-curso.html" class="sidebar-link">
+<span class="sidebar-icon">+</span>
+Crear curso
+</a>
+
+<a href="reportes-profesor.html" class="sidebar-link active">
+<span class="sidebar-icon">▥</span>
+Reportes / Ventas
+</a>
+
+<a href="mensajes-profesor.html" class="sidebar-link">
+<span class="sidebar-icon">✉</span>
+Mensajes
+</a>
+
+</nav>
+
+<div class="sidebar-bottom">
+
+<a href="profesor-configuracion.html" class="sidebar-link">
+<span class="sidebar-icon">⚙</span>
+Configuración
+</a>
+
+<a href="index.html" class="sidebar-link logout-link">
+<span class="sidebar-icon">↪</span>
+Cerrar sesión
+</a>
+
+</div>
+
+</aside>
+
+
+<main class="dashboard">
+
+<header class="dashboard-header">
+
+<div>
+
+<p class="dashboard-welcome">Instructor</p>
+
+<h1>Ventas y reportes</h1>
+
+</div>
+
+<div class="dashboard-actions">
+
+<button class="theme-button" id="themeButton">
+☾
+</button>
+
+<div class="user-mini">
+
+<div class="user-avatar">
+M
+</div>
+
+<div>
+
+<strong>María</strong>
+
+<small>Instructor</small>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<div class="page-title">
+
+<h1>Resumen de ventas</h1>
+
+<p>
+Consulta el rendimiento de los cursos que ofreces.
+</p>
+
+</div>
+
+
+<!-- =========================
+     FILTROS
+========================= -->
+
+<div class="content-card">
+
+<h2>Filtros</h2>
+
+<div class="form-grid">
+
+<div class="form-group">
+
+<label>Fecha inicial</label>
+
+<input type="date">
+
+</div>
+
+
+<div class="form-group">
+
+<label>Fecha final</label>
+
+<input type="date">
+
+</div>
+
+
+<div class="form-group">
+
+<label>Categoría</label>
+
+<select>
+
+<option>Todas</option>
+<option>Álgebra</option>
+<option>Cálculo</option>
+<option>Geometría</option>
+<option>Trigonometría</option>
+<option>Estadística</option>
+<option>Física</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Estado de los cursos</label>
+
+<select>
+
+<option>Solo cursos activos</option>
+<option>Todos los cursos</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<button class="primary-btn">
+Aplicar filtros
+</button>
+
+</div>
+
+
+<!-- =========================
+     RESUMEN GENERAL
+========================= -->
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<span>👥</span>
+
+<strong>278</strong>
+
+<small>Alumnos inscritos</small>
+
+</div>
+
+
+<div class="stat-card">
+
+<span>▣</span>
+
+<strong>3</strong>
+
+<small>Cursos activos</small>
+
+</div>
+
+
+<div class="stat-card">
+
+<span>★</span>
+
+<strong>4.8</strong>
+
+<small>Calificación promedio</small>
+
+</div>
+
+
+<div class="stat-card">
+
+<span>$</span>
+
+<strong>$110,922.00</strong>
+
+<small>Ingresos totales</small>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     1. VENTAS POR CURSO
+========================= -->
+
+<div class="content-card">
+
+<div class="section-head">
+
+<div>
+
+<h2>Ventas por curso</h2>
+
+<p>
+Alumnos inscritos, nivel promedio e ingresos generados.
+</p>
+
+</div>
+
+</div>
+
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>Curso</th>
+
+<th>Alumnos inscritos</th>
+
+<th>Nivel promedio</th>
+
+<th>Total de ingresos</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+Álgebra desde cero
+</td>
+
+<td>
+120
+</td>
+
+<td>
+3.8
+</td>
+
+<td>
+$47,880.00
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Cálculo diferencial
+</td>
+
+<td>
+86
+</td>
+
+<td>
+2.9
+</td>
+
+<td>
+$34,314.00
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Geometría práctica
+</td>
+
+<td>
+72
+</td>
+
+<td>
+4.2
+</td>
+
+<td>
+$28,728.00
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<div class="report-total">
+
+<strong>
+Total de ingresos por todos los cursos:
+</strong>
+
+<strong>
+$110,922.00
+</strong>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     FORMAS DE PAGO
+========================= -->
+
+<div class="content-card">
+
+<h2>Ingresos por forma de pago</h2>
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>Forma de pago</th>
+
+<th>Total</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Tarjeta</td>
+
+<td>$78,430.00</td>
+
+</tr>
+
+<tr>
+
+<td>Transferencia</td>
+
+<td>$25,492.00</td>
+
+</tr>
+
+<tr>
+
+<td>Otros</td>
+
+<td>$7,000.00</td>
+
+</tr>
+
+<tr>
+
+<td>
+<strong>Total</strong>
+</td>
+
+<td>
+<strong>$110,922.00</strong>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<!-- =========================
+     2. DETALLE POR ALUMNO
+========================= -->
+
+<div class="content-card">
+
+<div class="section-head">
+
+<div>
+
+<h2>Detalle de alumnos</h2>
+
+<p>
+Consulta el avance y pago de cada alumno inscrito.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label>Seleccionar curso</label>
+
+<select>
+
+<option>Álgebra desde cero</option>
+<option>Cálculo diferencial</option>
+<option>Geometría práctica</option>
+
+</select>
+
+</div>
+
+
+<table class="data-table">
+
+<thead>
+
+<tr>
+
+<th>Alumno</th>
+
+<th>Fecha de inscripción</th>
+
+<th>Nivel de avance</th>
+
+<th>Precio pagado</th>
+
+<th>Forma de pago</th>
+
+</tr>
+
+</thead>
+
+
+<tbody>
+
+<tr>
+
+<td>
+Alex García
+</td>
+
+<td>
+12 Sep 2026
+</td>
+
+<td>
+Nivel 4
+</td>
+
+<td>
+$399.00
+</td>
+
+<td>
+Tarjeta
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Daniela Ruiz
+</td>
+
+<td>
+10 Sep 2026
+</td>
+
+<td>
+Nivel 2
+</td>
+
+<td>
+$399.00
+</td>
+
+<td>
+Transferencia
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Marco Pérez
+</td>
+
+<td>
+01 Sep 2026
+</td>
+
+<td>
+Nivel 6
+</td>
+
+<td>
+$399.00
+</td>
+
+<td>
+Tarjeta
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Sofía Hernández
+</td>
+
+<td>
+28 Ago 2026
+</td>
+
+<td>
+Nivel 3
+</td>
+
+<td>
+$399.00
+</td>
+
+<td>
+Tarjeta
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+
+<div class="report-total">
+
+<strong>
+Total de ingresos del curso:
+</strong>
+
+<strong>
+$47,880.00
+</strong>
+
+</div>
+
+</div>
+
+</main>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

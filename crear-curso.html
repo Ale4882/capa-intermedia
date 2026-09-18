@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crear curso | NUMERA</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<aside class="sidebar">
+
+<a href="profesor.html" class="sidebar-logo">
+√ <span>NUMERA</span>
+</a>
+
+<nav class="sidebar-nav">
+
+<a href="profesor.html" class="sidebar-link">
+<span class="sidebar-icon">⌂</span>
+Inicio
+</a>
+
+<a href="cursos-profesor.html" class="sidebar-link">
+<span class="sidebar-icon">▣</span>
+Mis cursos
+</a>
+
+<a href="crear-curso.html" class="sidebar-link active">
+<span class="sidebar-icon">＋</span>
+Crear curso
+</a>
+
+<a href="reportes-profesor.html" class="sidebar-link">
+<span class="sidebar-icon">▥</span>
+Reportes
+</a>
+
+<a href="mensajes-profesor.html" class="sidebar-link">
+<span class="sidebar-icon">✉</span>
+Mensajes
+</a>
+
+</nav>
+
+<div class="sidebar-bottom">
+
+<a href="configuracion-profesor.html" class="sidebar-link">
+<span class="sidebar-icon">⚙</span>
+Configuración
+</a>
+
+<a href="index.html" class="sidebar-link logout-link">
+<span class="sidebar-icon">↪</span>
+Cerrar sesión
+</a>
+
+</div>
+
+</aside>
+
+
+<main class="dashboard">
+
+<header class="dashboard-header">
+
+<div>
+<p class="dashboard-welcome">Instructor</p>
+<h1>Crear curso</h1>
+</div>
+
+<div class="dashboard-actions">
+
+<button class="theme-button" id="themeButton">☾</button>
+
+<div class="user-mini">
+<div class="user-avatar">P</div>
+
+<div>
+<strong>Profesor</strong>
+<small>Instructor</small>
+</div>
+</div>
+
+</div>
+
+</header>
+
+
+<form class="internal-form">
+
+<div class="page-title">
+
+<h1>Información del curso</h1>
+
+<p>Completa los datos básicos para crear un nuevo curso.</p>
+
+</div>
+
+
+<div class="internal-form-group">
+
+<label>Título del curso</label>
+
+<input type="text" placeholder="Ej. Álgebra desde cero">
+
+</div>
+
+
+<div class="internal-form-group">
+
+<label>Descripción</label>
+
+<textarea placeholder="Describe el contenido del curso..."></textarea>
+
+</div>
+
+
+<div class="internal-form-group">
+
+<label>Categoría</label>
+
+<select>
+<option>Selecciona una categoría</option>
+<option>Álgebra</option>
+<option>Cálculo</option>
+<option>Geometría</option>
+<option>Trigonometría</option>
+<option>Estadística</option>
+</select>
+
+</div>
+
+
+<div class="internal-form-group">
+
+<label>Precio</label>
+
+<input type="number" placeholder="0.00">
+
+</div>
+
+
+<div class="internal-form-group">
+
+<label>Imagen del curso</label>
+
+<input type="file" accept="image/*">
+
+</div>
+
+
+<div class="internal-form-group">
+
+<label>Video del curso</label>
+
+<input type="text" placeholder="URL del video">
+
+</div>
+
+
+<button type="button" class="internal-form-submit">
+Crear curso
+</button>
+
+</form>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
