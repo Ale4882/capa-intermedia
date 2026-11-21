@@ -41,7 +41,7 @@
             </p>
 
 
-            <form>
+            <form id="registroForm">
 
                 <div class="form-group">
 
@@ -53,9 +53,22 @@
                         type="text"
                         id="name"
                         placeholder="Tu nombre completo"
+                        required
                     >
 
                 </div>
+
+                <div class="form-group">
+    <label for="username">Nombre de usuario</label>
+    <input
+        type="text"
+        id="username"
+        placeholder="Ejemplo: ale123"
+        minlength="3"
+        maxlength="40"
+        required
+    >
+</div>
 
 
                 <div class="form-group">
@@ -66,25 +79,13 @@
 
                     <select id="gender">
 
-                        <option value="">
-                            Selecciona una opción
-                        </option>
-
-                        <option>
-                            Femenino
-                        </option>
-
-                        <option>
-                            Masculino
-                        </option>
-
-                        <option>
-                            Otro
-                        </option>
-
-                        <option>
-                            Prefiero no especificarlo
-                        </option>
+                        <option value="">Selecciona una opción</option>
+<option value="femenino">Femenino</option>
+<option value="masculino">Masculino</option>
+<option value="otro">Otro</option>
+<option value="prefiero_no_especificarlo">
+    Prefiero no especificarlo
+</option>
 
                     </select>
 
@@ -115,6 +116,7 @@
                         type="email"
                         id="registerEmail"
                         placeholder="ejemplo@correo.com"
+                        required
                     >
 
                 </div>
@@ -130,6 +132,8 @@
                         type="password"
                         id="registerPassword"
                         placeholder="Crea una contraseña"
+                        required
+                        minlength="8"
                     >
 
                 </div>
@@ -145,6 +149,7 @@
                         type="password"
                         id="confirmPassword"
                         placeholder="Repite tu contraseña"
+                        required
                     >
 
                 </div>
@@ -176,13 +181,13 @@
                         <label class="role-option">
 
                             <input
-                                type="radio"
-                                name="role"
-                            >
+    type="radio"
+    name="role"
+    value="estudiante"
+    required
+>
 
-                            <span>
-                                🎓 Estudiante
-                            </span>
+<span>🎓 Estudiante</span>
 
                         </label>
 
@@ -190,13 +195,12 @@
                         <label class="role-option">
 
                             <input
-                                type="radio"
-                                name="role"
-                            >
+    type="radio"
+    name="role"
+    value="instructor"
+>
 
-                            <span>
-                                ∑ Instructor
-                            </span>
+<span>∑ Instructor</span>
 
                         </label>
 
@@ -205,9 +209,11 @@
                 </div>
 
 
-                <a href="estudiante.html" class="auth-submit">
-                    Crear cuenta
-                </a>
+                <p id="registroMessage" role="alert" aria-live="polite"></p>
+
+<button type="submit" class="auth-submit" id="registroButton">
+    Crear cuenta
+</button>
 
             </form>
 
@@ -254,6 +260,7 @@
 
 
     <script src="js/script.js"></script>
+    <script src="js/registro.js"></script>
 
 </body>
 </html>

@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body data-rol="administrador"></body>
 
     <!-- =====================================
          SIDEBAR ADMIN
@@ -71,7 +71,7 @@
                 Configuración
             </a>
 
-            <a href="index.html" class="sidebar-link logout-link">
+            <a href="#" id="cerrarSesion" class="sidebar-link logout-link">
                 <span class="sidebar-icon">↪</span>
                 Cerrar sesión
             </a>
@@ -95,7 +95,7 @@
                     Panel administrativo
                 </p>
 
-                <h1>Hola, Administrador 👋</h1>
+                <h1>Hola, <span id="nombreUsuario">Administrador</span> 👋</h1>
 
             </div>
 
@@ -109,21 +109,12 @@
 
                 <div class="user-mini">
 
-                    <div class="user-avatar">
-                        A
-                    </div>
+                    <div class="user-avatar" id="avatarUsuario">A</div>
 
-                    <div>
-
-                        <strong>
-                            Administrador
-                        </strong>
-
-                        <small>
-                            Administrador
-                        </small>
-
-                    </div>
+<div>
+    <strong id="nombreMini">Administrador</strong>
+    <small>Administrador</small>
+</div>
 
                 </div>
 
@@ -574,6 +565,7 @@
 
 
     <script src="js/script.js"></script>
+    <script src="js/panel.js"></script>
 
 </body>
 </html>

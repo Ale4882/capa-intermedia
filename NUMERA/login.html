@@ -41,20 +41,20 @@
             </p>
 
 
-            <form>
+            <form id="loginForm">
 
                 <div class="form-group">
+                  <label for="email">
+                      Correo electrónico
+                  </label>
 
-                    <label for="email">
-                        Correo electrónico
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        placeholder="ejemplo@correo.com"
-                    >
-
+                  <input
+                     type="text"
+                     id="email"
+                     placeholder="ejemplo@correo.com"
+                     required
+                     autocomplete="username"
+                   >
                 </div>
 
 
@@ -68,14 +68,18 @@
                         type="password"
                         id="password"
                         placeholder="Ingresa tu contraseña"
+                        required
+                        autocomplete="current-password"
                     >
 
                 </div>
 
 
-               <a href="estudiante.html" class="auth-submit">
-                  Iniciar sesión
-             </a>
+               <p id="loginMessage" role="alert" aria-live="polite"></p>
+
+               <button type="submit" class="auth-submit" id="loginButton">
+                   Iniciar sesión
+               </button>
 
             </form>
 

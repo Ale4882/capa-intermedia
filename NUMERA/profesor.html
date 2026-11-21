@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body data-rol="instructor"></body>
 
     <!-- =====================================
          SIDEBAR PROFESOR
@@ -66,7 +66,7 @@
                 Configuración
             </a>
 
-            <a href="index.html" class="sidebar-link logout-link">
+            <a href="#" id="cerrarSesion" class="sidebar-link logout-link">
                 <span class="sidebar-icon">↪</span>
                 Cerrar sesión
             </a>
@@ -90,7 +90,7 @@
                     Panel de profesor
                 </p>
 
-                <h1>Hola, Profesor 👋</h1>
+                <h1>Hola, <span id="nombreUsuario">Profesor</span> 👋</h1>
 
             </div>
 
@@ -104,19 +104,12 @@
 
                 <div class="user-mini">
 
-                    <div class="user-avatar">
-                        P
-                    </div>
+                    <div class="user-avatar" id="avatarUsuario">P</div>
 
-                    <div>
-
-                        <strong>Profesor</strong>
-
-                        <small>
-                            Instructor
-                        </small>
-
-                    </div>
+<div>
+    <strong id="nombreMini">Profesor</strong>
+    <small>Profesor</small>
+</div>
 
                 </div>
 
@@ -476,7 +469,8 @@
     </main>
 
 
-    <script src="js/script.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/panel.js"></script>
 
 </body>
 </html>

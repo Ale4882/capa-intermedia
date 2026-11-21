@@ -62,7 +62,7 @@
                 Configuración
             </a>
 
-            <a href="index.html" class="sidebar-link logout-link">
+            <a href="#" id="cerrarSesion" class="sidebar-link logout-link">
                 <span class="sidebar-icon">↪</span>
                 Cerrar sesión
             </a>
@@ -82,7 +82,7 @@
 
             <div>
                 <p class="dashboard-welcome">Bienvenido de nuevo</p>
-                <h1>Hola, Alex 👋</h1>
+                <h1>Hola, <span id="nombreEstudiante">Estudiante</span> 👋</h1>
             </div>
 
             <div class="dashboard-actions">
@@ -93,12 +93,12 @@
 
                 <div class="user-mini">
 
-                    <div class="user-avatar">
-                        A
+                    <div class="user-avatar" id="avatarEstudiante">
+                        E
                     </div>
 
                     <div>
-                        <strong>Alex</strong>
+                        <strong id="nombreMini"></strong>
                         <small>Estudiante</small>
                     </div>
 
@@ -431,6 +431,7 @@
 
 
     <script src="js/script.js"></script>
+    <script src="js/estudiante.js"></script>
 
 </body>
 </html>
